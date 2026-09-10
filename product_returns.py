@@ -22,28 +22,28 @@ with st.form("prediction_form"):
     col1 = st.columns(1)
     
     with col1:
-        day_of_week = st.number_input("day_of_week", min_value=0.0, value=1
-        quantity = st.number_input("quantity", min_value=0.0, value=1222
-        complexity = st.number_input("complexity", min_value=0.0, value=1
-        is_rush = st.number_input("is_rush", min_value=0.0, value=0
-        electricity_issue = st.number_input("electricity_issue", min_value=0.0, value=0
-        is_weekend = st.number_input("is_weekend", min_value=0.0, value=0
-        primary_worker_skill = st.number_input("primary_worker_skill", min_value=0.0, value=0.841
-        num_workers = st.number_input("num_workers", min_value=0.0, value=1
-        avg_worker_skill = st.number_input("avg_worker_skill", min_value=0.0, value=0.841
-        min_worker_skill = st.number_input("min_worker_skill", min_value=0.0, value=0.841
+        day_of_week = st.number_input("day_of_week", min_value=0.0, value=1)
+        quantity = st.number_input("quantity", min_value=0.0, value=1222)
+        complexity = st.number_input("complexity", min_value=0.0, value=1)
+        is_rush = st.number_input("is_rush", min_value=0.0, value=0)
+        electricity_issue = st.number_input("electricity_issue", min_value=0.0, value=0)
+        is_weekend = st.number_input("is_weekend", min_value=0.0, value=0)
+        primary_worker_skill = st.number_input("primary_worker_skill", min_value=0.0, value=0.841)
+        num_workers = st.number_input("num_workers", min_value=0.0, value=1)
+        avg_worker_skill = st.number_input("avg_worker_skill", min_value=0.0, value=0.841)
+        min_worker_skill = st.number_input("min_worker_skill", min_value=0.0, value=0.841)
 
     st.subheader("Numerical Inputs")
     col2 = st.columns(1)
     
     with col2:
-        date = st.text_input("date",  value="2026-06-16"
-        shift = st.text_input("shift",  value="morning"
-        product_type = st.text_input("product_type",  value="plastic_bag"
-        material_type = st.text_input("material_type",  value="standard_cardboard"
-        client_id = st.text_input("client_id",  value="C014"
-        primary_worker_id = st.text_input("primary_worker_id",  value="W007"
-        primary_worker_profile = st.text_input("primary_worker_profile",  value="experienced"
+        date = st.text_input("date",  value="2026-06-16")
+        shift = st.text_input("shift",  value="morning")
+        product_type = st.text_input("product_type",  value="plastic_bag")
+        material_type = st.text_input("material_type",  value="standard_cardboard")
+        client_id = st.text_input("client_id",  value="C014")
+        primary_worker_id = st.text_input("primary_worker_id",  value="W007")
+        primary_worker_profile = st.text_input("primary_worker_profile",  value="experienced")
 
 
     # Submit button for the form
