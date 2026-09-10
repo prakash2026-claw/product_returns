@@ -19,7 +19,7 @@ st.write("Fill out the product,client and worker realted details below to check 
 # 2. Build the Form Interface
 with st.form("prediction_form"):
     st.subheader("Categorical Inputs")
-    col1 = st.columns(1)
+    col1 = st.columns(10)
     
     with col1:
         day_of_week = st.number_input("day_of_week", min_value=0.0, value=1)
@@ -34,7 +34,7 @@ with st.form("prediction_form"):
         min_worker_skill = st.number_input("min_worker_skill", min_value=0.0, value=0.841)
 
     st.subheader("Numerical Inputs")
-    col2 = st.columns(1)
+    col2 = st.columns(7)
     
     with col2:
         date = st.text_input("date", "2026-06-16")
