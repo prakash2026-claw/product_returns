@@ -37,14 +37,13 @@ with st.form("prediction_form"):
     col2 = st.columns(1)
     
     with col2:
-        date = st.text_input("date",  value="2026-06-16")
-        shift = st.text_input("shift",  value="morning")
-        product_type = st.text_input("product_type",  value="plastic_bag")
-        material_type = st.text_input("material_type",  value="standard_cardboard")
-        client_id = st.text_input("client_id",  value="C014")
-        primary_worker_id = st.text_input("primary_worker_id",  value="W007")
-        primary_worker_profile = st.text_input("primary_worker_profile",  value="experienced")
-
+        date = st.text_input("date", "2026-06-16")
+        shift = st.text_input("shift","morning")
+        product_type = st.text_input("product_type","plastic_bag")
+        material_type = st.text_input("material_type","standard_cardboard")
+        client_id = st.text_input("client_id","C014")
+        primary_worker_id = st.text_input("primary_worker_id","W007")
+        primary_worker_profile = st.text_input("primary_worker_profile","experienced")
 
     # Submit button for the form
     submit_button = st.form_submit_button("Predict Product Returns")
