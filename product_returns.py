@@ -43,7 +43,7 @@ with st.form("prediction_form"):
         shift = st.text_input("shift","morning")
         product_type = st.text_input("product_type","plastic_bag")
         
-     with col4:       
+    with col4:       
         material_type = st.text_input("material_type","standard_cardboard")
         client_id = st.text_input("client_id","C014")
         primary_worker_id = st.text_input("primary_worker_id","W007")
