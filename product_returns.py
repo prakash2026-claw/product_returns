@@ -19,7 +19,7 @@ st.write("Fill out the product,client and worker realted details below to check 
 # 2. Build the Form Interface
 with st.form("prediction_form"):
     st.subheader("Categorical Inputs")
-    col1 = st.columns(10)
+    col1,col2 = st.columns(2)
     
     with col1:
         day_of_week = st.number_input("day_of_week", min_value=0.0, value=1)
@@ -27,6 +27,8 @@ with st.form("prediction_form"):
         complexity = st.number_input("complexity", min_value=0.0, value=1)
         is_rush = st.number_input("is_rush", min_value=0.0, value=0)
         electricity_issue = st.number_input("electricity_issue", min_value=0.0, value=0)
+     
+    with col2:        
         is_weekend = st.number_input("is_weekend", min_value=0.0, value=0)
         primary_worker_skill = st.number_input("primary_worker_skill", min_value=0.0, value=0.841)
         num_workers = st.number_input("num_workers", min_value=0.0, value=1)
@@ -34,12 +36,14 @@ with st.form("prediction_form"):
         min_worker_skill = st.number_input("min_worker_skill", min_value=0.0, value=0.841)
 
     st.subheader("Numerical Inputs")
-    col2 = st.columns(7)
+    col3,col4 = st.columns(2)
     
-    with col2:
+    with col3:
         date = st.text_input("date", "2026-06-16")
         shift = st.text_input("shift","morning")
         product_type = st.text_input("product_type","plastic_bag")
+        
+     with col4:       
         material_type = st.text_input("material_type","standard_cardboard")
         client_id = st.text_input("client_id","C014")
         primary_worker_id = st.text_input("primary_worker_id","W007")
