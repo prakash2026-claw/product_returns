@@ -22,16 +22,16 @@ with st.form("prediction_form"):
     col1,col2 = st.columns(2)
     
     with col1:
-        day_of_week = st.number_input("day_of_week", min_value=0.0, value=1)
-        quantity = st.number_input("quantity", min_value=0.0, value=1222)
-        complexity = st.number_input("complexity", min_value=0.0, value=1)
-        is_rush = st.number_input("is_rush", min_value=0.0, value=0)
-        electricity_issue = st.number_input("electricity_issue", min_value=0.0, value=0)
+        day_of_week = st.number_input("day_of_week", min_value=0.0, value=1.0)
+        quantity = st.number_input("quantity", min_value=0.0, value=1222.0)
+        complexity = st.number_input("complexity", min_value=0.0, value=1.0)
+        is_rush = st.number_input("is_rush", min_value=0.0, value=0.0)
+        electricity_issue = st.number_input("electricity_issue", min_value=0.0, value=0.0)
      
     with col2:        
-        is_weekend = st.number_input("is_weekend", min_value=0.0, value=0)
+        is_weekend = st.number_input("is_weekend", min_value=0.0, value=0.0)
         primary_worker_skill = st.number_input("primary_worker_skill", min_value=0.0, value=0.841)
-        num_workers = st.number_input("num_workers", min_value=0.0, value=1)
+        num_workers = st.number_input("num_workers", min_value=0.0, value=1.0)
         avg_worker_skill = st.number_input("avg_worker_skill", min_value=0.0, value=0.841)
         min_worker_skill = st.number_input("min_worker_skill", min_value=0.0, value=0.841)
 
